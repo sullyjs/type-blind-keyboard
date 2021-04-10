@@ -1,5 +1,6 @@
 const keys = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var timerstart = false;
+var stopinc = new Boolean(false);
+var timerstart = new Boolean(false);
 const timestamps = [];
 
 timestamps.unshift(getTimestamp());
@@ -75,7 +76,7 @@ const COLOR_CODES = {
   }
 };
 
-const TIME_LIMIT = 65;
+const TIME_LIMIT = 61;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
