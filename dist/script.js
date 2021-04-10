@@ -41,11 +41,10 @@ document.addEventListener("keyup", event => {
     highlightedKey.classList.remove("selected");
     targetRandomKey();
 
-      $(".zero").each(function (index) {
-          let num = index + 25;
-          $(this).text(num);
-      });
-
+    var points = document.getElementById('points');
+    var number = points.innerHTML;
+    number++;
+    computerScore.innerHTML = number;
   } 
 })
 
