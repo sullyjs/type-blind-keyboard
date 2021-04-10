@@ -109,7 +109,9 @@ document.getElementById("app").innerHTML = `
 startTimer();
 
 function onTimesUp() {
-  clearInterval(timerInterval);
+    clearInterval(timerInterval);
+    var audio = new Audio('clock03.wav');
+    audio.play();
 }
 
 function startTimer() {
