@@ -213,3 +213,7 @@ li {
         transform: translate(0);
     }
 }
+
+.points {
+    color: white;
+}
