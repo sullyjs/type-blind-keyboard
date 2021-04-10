@@ -40,6 +40,12 @@ document.addEventListener("keyup", event => {
     console.log(`Character per minute ${60/elapsedTime}`)
     highlightedKey.classList.remove("selected");
     targetRandomKey();
+
+      $(".zero").each(function (index) {
+          let num = index + 25;
+          $(this).text(num);
+      });
+
   } 
 })
 
