@@ -12,9 +12,10 @@ function getRandomNumber(min, max) {
 
 function incrementNumber() {
     var points = document.getElementById('points');
-    var number = points.innerHTML;
-    number+=100;
-    points.innerHTML = number;
+    var number = parseInt(points.innerHTML);
+    number += 100;
+    var n = n.toString();
+    points.innerHTML = n;
 }
 
 function getRandomKey() {
