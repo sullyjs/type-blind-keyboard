@@ -35,16 +35,16 @@ document.addEventListener("keyup", event => {
   })
   
   if (keyPressed === highlightedKey.innerHTML) {
+      var points = document.getElementById('points');
+      var number = points.innerHTML;
+      number++;
+      computerScore.innerHTML = number;
+
     timestamps.unshift(getTimestamp());
     const elapsedTime = timestamps[0] - timestamps[1];
     console.log(`Character per minute ${60/elapsedTime}`)
     highlightedKey.classList.remove("selected");
     targetRandomKey();
-
-    var points = document.getElementById('points');
-    var number = points.innerHTML;
-    number++;
-    computerScore.innerHTML = number;
   } 
 })
 
